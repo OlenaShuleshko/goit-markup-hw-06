@@ -893,11 +893,16 @@ address {
 }
 
 .modal-form-checkbox {
-	appearance: none;
 	position: absolute;
-
-	transition: 500ms;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	owerflow: hidden;
 }
+
 .checkbox-icon-agreement {
 	display: inline-block;
 	width: 16px;
