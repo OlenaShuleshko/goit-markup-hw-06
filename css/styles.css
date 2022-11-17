@@ -467,6 +467,7 @@ address {
 .adress:hover,
 .adress:focus {
 	color: var(--acent-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -482,6 +483,64 @@ address {
 	color: var(--acent-color);
 }
 
+.footer-suscribe {
+	margin-left: 93px;
+}
+
+.footer-suscribe input {
+	width: 358px;
+	height: 50px;
+	padding: 16px 15px;
+	margin: 6px;
+	background: #2f303a;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+.footer-suscribe-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	margin-bottom: 15px;
+
+	color: var(--background-color);
+}
+
+.footer-suscribe-btn {
+	position: relative;
+
+	font-family: inherit;
+	color: var(--thirdy-color);
+	background-color: var(--accent-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	border-width: 0;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	color: var(--background-color);
+	background-color: var(--acent-color);
+	padding: 10px 32px;
+	min-width: 216px;
+	text-align: center;
+
+	transition: background-color 250ms linear;
+}
+
+.footer-suscribe-btn:hover,
+.footer-suscribe-btn:focus {
+	background-color: var(--acent-btn-cl);
+}
+
+.footer-send-icon {
+	color: white;
+}
 /*--------------portfolio------------*/
 
 /*--header--*/
@@ -683,27 +742,181 @@ address {
 	height: 30px;
 	padding: 0;
 
+	color: #000000;
+
 	background-color: transparent;
 	border-radius: 50%;
 	border: 1px solid rgb(232, 230, 230);
 	cursor: pointer;
 }
-.modal-title {
-	position: absolute;
 
-	margin: 40px 40px 518px 40px;
+.modal-btn:hover,
+.modal-btn:focus {
+	fill: var(--acent-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*-------modal forms-------- */
+
+.modal-title {
+	margin-top: 0;
+	margin-bottom: 0;
+
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 0.8;
 	text-align: center;
 	letter-spacing: 0.03em;
+	color: #212121;
+}
+
+.modal-form {
+	width: 448px;
+	outline: 1px solid tomato;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 20px;
+}
+/* 
+.modal-form-label {
+	margin-top: 4px;
+} НЕ РАБОТАЕТ ПОЧЕМУ */
+
+.modal-form-wrapper {
+	margin-bottom: 10px;
+}
+
+.modal-form-wrapper input {
+	margin: 0;
+	padding: 12px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-form-wrapper label {
+	margin-top: 4px;
+}
+
+.modern-form-field {
+	width: 100%;
+}
+
+.modal-form-label {
+	padding-bottom: 4px;
+
+	font-weight: 400;
+	color: var(--ouwer-text-color);
+}
+
+.modal-form-label input::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	height: 138px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	resize: none;
+	padding: 8px;
+}
+
+.modal-field-checkbox label {
+	font-size: 14px;
+	margin-left: 7px;
+}
+
+.modal-field-checkbox {
+	display: flex;
+	align-items: center;
+}
+
+.modal-field-checkbox {
+	margin-right: 10px;
+}
+
+/* .modal-title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 0.8;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	position: absolute;
 
 	color: #212121;
 }
 
-.modal-send-btn {
+.form {
+	width: 448px;
+	height: 342px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+}
+
+.modal-form-label {
+	padding-bottom: 4px;
+
+	font-weight: 400;
+	color: var(--ouwer-text-color);
+}
+
+.form-field {
+	position: relative;
+	margin: 10px;
+}
+
+.form-field input {
+	margin-top: 4px;
+	padding: 12px 11px;
+	width: 100%;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.form-field input::placeholder {
+	color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field label {
+	padding: 4px;
+}
+
+.form-field textarea {
+	margin-top: 4px;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	height: 138px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	resize: none;
+	padding: 8px;
+}
+
+.group input[type="checkbox"] {
+	width: 16px;
+	height: 15px;
+}
+
+.modal-contact {
+	margin-top: 10px;
+}
+.modal-link {
+	font-weight: 400;
+	text-decoration-line: underline;
+	color: var(--acent-color);
+}
+
+.modal-form-btn {
 	font-family: inherit;
 	color: var(--thirdy-color);
 	background-color: var(--accent-color);
@@ -717,15 +930,17 @@ address {
 	border-radius: 4px;
 	color: var(--background-color);
 	background-color: var(--acent-color);
-	margin: 491px 164px 40px 164px;
 	width: 200px;
 	height: 50px;
+	margin-left: 100px;
+	margin-top: 30px;
 	text-align: center;
 
 	transition: background-color 250ms linear;
 }
 
-.modal-send-btn:hover,
-.modal-send-btn:focus {
+.modal-form-btn:hover,
+.modal-form-btn:focus {
 	background-color: var(--acent-btn-cl);
 }
+ */ ;
