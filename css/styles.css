@@ -779,6 +779,7 @@ address {
 	margin-right: 0;
 	padding: 20px;
 }
+
 /* 
 .modal-form-label {
 	margin-top: 4px;
@@ -791,16 +792,12 @@ address {
 .modal-form-wrapper input {
 	margin: 0;
 	padding: 12px;
-
+	width: 100%;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal-form-wrapper label {
 	margin-top: 4px;
-}
-
-.modern-form-field {
-	width: 100%;
 }
 
 .modal-form-label {
@@ -814,6 +811,10 @@ address {
 	color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form-icon {
+	fill: #000000;
+}
+
 textarea {
 	display: block;
 	width: 100%;
@@ -824,18 +825,20 @@ textarea {
 	padding: 8px;
 }
 
-.modal-field-checkbox label {
-	font-size: 14px;
-	margin-left: 7px;
-}
-
 .modal-field-checkbox {
 	display: flex;
 	align-items: center;
+
+	margin-right: 10px;
 }
 
-.modal-field-checkbox {
-	margin-right: 10px;
+.modal-form-checkbox:checked + .modal-checkbox-label {
+	color: var(--acent-color);
+}
+
+.modal-field-checkbox label {
+	font-size: 14px;
+	margin-left: 7px;
 }
 
 /* .modal-title {
