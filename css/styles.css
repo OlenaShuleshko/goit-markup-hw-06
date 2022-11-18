@@ -764,7 +764,7 @@ address {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
 	fill: var(--acent-color);
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------modal forms-------- */
@@ -809,14 +809,14 @@ address {
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-wrapper:focus-within .modal-form-input,
+.modal-form-wrapper:focus .modal-form-input,
 .modal-form-wrapper:hover .modal-form-input {
 	border: 1px solid var(--acent-color);
 }
 
 .modal-form-wrapper:focus-within .modal-form-icon,
 .modal-form-wrapper:hover .modal-form-icon {
-	fill: var(--acent-color);
+	fill: var(--acent-btn-cl);
 }
 
 .modal-form-wrapper label {
@@ -900,7 +900,7 @@ address {
 	border: 0;
 	padding: 0;
 	clip: rect(0 0 0 0);
-	owerflow: hidden;
+	overflow: hidden;
 }
 
 .checkbox-icon-agreement {
@@ -921,7 +921,7 @@ address {
 	background-origin: content-box;
 	background-repeat: no-repeat;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
 }
 
 .checkbox_agreement {
@@ -941,9 +941,9 @@ address {
 }
 
 .modal-form-btn {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
-
 	padding: 10px 28px;
 
 	min-width: 200px;
